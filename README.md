@@ -3,4 +3,4 @@
 
 ---
 
-abrir [Aqui](https://66dcf68ac492f208c7853bec--inquisitive-dolphin-925999.netlify.app/)
+abrir [Aqui](https://simple-page-menu-self.vercel.app/)
