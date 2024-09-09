@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import Header from '../components/header.astro'
 ---
 
 <!doctype html>
@@ -16,7 +18,10 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="h-screen">
+		<header class="flex justify-center">
+			<Header/>
+		</header>
 		<slot />
 	</body>
 </html>
@@ -34,7 +39,9 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
+		background: url(../components/images/fondo.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	code {
 		font-family:
